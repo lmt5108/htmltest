@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<Meta Http-Equiv="Content-Type" Content="text/html; Charset=big5">
+<meta name="keywords" content="CGI,webpage,homepage,study,java,html,htm,download,free,網頁,網頁製作,研習,免費,教學,下載">
+<meta name="Description" content="本教材版權屬網頁研習室作者【李文能】所有，未經授權同意，不得非法使用">
+<meta name="author" content="網頁研習室  WebPage Study Room,李文能">
+<meta name="url" content="http://www.webpage.idv.tw/">
+<TITLE></TITLE>
+<link rel="stylesheet" href="css.css"  type="text/css">
+<script language="JavaScript" src="cod.js"></script>
+</HEAD>
+<BODY BACKGROUND="back.jpg" marginwidth=-1 marginheight=-1 topmargin=0 leftmargin=0 rightmargin=0>
+<center>
+
+</center>
+</BODY>
+</HTML>
+關閉視窗

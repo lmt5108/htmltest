@@ -1,0 +1,89 @@
+這是常用到的CSS Code：
+#############
+行內式(Inlin Style)排版樣式：(直接定義在原有的html標籤內)
+標籤架構：
+<tag style="property:value">Document</tage>
+<標籤 樣式宣告="樣式名稱:設定值">文件</標籤>
+範例：<font style="font-size: 25pt;color:green">網頁研習室</font>
+範例：<DIV STYLE="position:absolute; width:20px; height:20px">網頁研習室</DIV>
+#############
+內崁式(Embedding Style)排版樣式：(定義在HEAD標籤內)
+標籤架構：
+(1)依附標籤
+<style type="text/css">
+h2 {CSS語法}
+td,p {CSS語法}
+</style>
+只要在<body>...</body>間使用到<h2>、<td>、<p>這些標籤，將自動被套用。
+(2)先給名字再呼叫
+<style type="text/css">
+.type1 {CSS語法}
+.type2 {CSS語法}
+</style>
+因已經設定命名為type1 OR type2(自訂任取)，所以想套用的時候，就用class呼叫它
+所以只要在<body>...</body>間，使用<font class="設定命名">...</font>標籤內的文件，將會套用到type1 OR type2的設定。
+(3)先給名字再呼叫(id)
+<style type="text/css">
+#case1 {CSS語法}
+#case2 {CSS語法}
+</style>
+因已經設定命名為.#case1 OR .#case2，要套用的時候，可用id呼叫它。
+所以只要在<body>...</body>間，使用<font id="設定命名">...</font>標籤內的文件，將會套用到.#case1 OR .#case2的設定(大多用來絕對定位網頁中的物件，以井字號開始，每個只能定義一次)。
+(2) & (3)可相互結合使用
+#############
+連結式(Linking Style)排版樣式：(定義直接寫在外部檔案內)
+標籤架構：
+<link rel="stylesheet" type="text/css" href="../../three.css">
+#############
+常用範例：
+常用型
+<style>
+<!--
+body {  font-family: "新細明體"; font-size: 10pt; text-decoration: none}
+td {  font-family: "新細明體"; font-size: 10pt; text-decoration: none}
+a { text-decoration:  none;font-weight: normal;color:#0000ff}
+a:hover {background:#1AA3F3;color:#ffffff;text-decoration:  underline;}
+-->
+</style>
+=========
+加底線
+<STYLE type="text/css">
+<!--
+td { font-size: 10pt; text-decoration: none;color:#000000}
+A:link {color:#ff0000; text-decoration: none}
+A:hover {background:#ffffff; text-decoration: underline}
+A:active { color:#ff00ff; text-decoration: none}
+A:visited {color:#ff0000 text-decoration: none}
+-->
+</STYLE>
+=========
+加上下雙線
+<STYLE type="text/css">
+<!--
+A:link {color: #8080FF}
+A:visited {color: #8080FF}
+A:active {color: #0000a0}
+A:hover {color:#0000a0; text-decoration : underline overline; background-color : #EEEEF7;}  
+-->
+</STYLE>
+=========
+無底線
+<STYLE type="text/css">
+<!--
+A:link {text-decoration: none}
+A:hover {text-decoration: none}
+A:active {text-decoration: none}
+A:visited {text-decoration: none}
+-->
+</STYLE>
+=========
+灰底表單
+<style type="text/css">
+input, select, textarea { background: #dddddd ; color: #000000; font-size: 8pt; }
+</style>
+=========
+文字加底色
+<font style="background-color:#ffff00; color: #0000ff">文字</font>
+<font style="font-size: 12pt;color:green;background-color:#ffffff">文字</font>
+############
+關閉視窗

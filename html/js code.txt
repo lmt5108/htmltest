@@ -1,0 +1,129 @@
+這是常用到的JavaScript：視窗類
+###############
+鏈結警告語：
+<A HREF="space.htm" onClick= "javascript:alert('這是範例');return false">下載檔案</a>
+<A href="javascript:alert('Sorry！\n\n Under Construction\n\n Come Soon');">
+<A href="javascript:alert('Sorry！');">
+=============
+鏈結警告語：
+<A href="javascript:alert('本站最佳瀏覽器使用版本\n\nIE4.0\n或\nNetscape4.5版以上');">螢幕設定</A>
+=========
+進入便開啟指定頁：
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function openThanks() {
+window.open("check.htm");  // Can be any page
+// window.location.href="chinese.htm"; // or thise
+}
+// End -->
+</script>
+</HEAD>
+<BODY onUnload="openThanks()">
+=======================
+鏈結跳出新視窗：
+<HEAD>
+<script language="JavaScript">
+<!--
+function SubPage(){  
+ open("join.htm","SubPageWindow","width=620,height=400,resizable=1,menubar=1,scrollbars=1");
+}
+// -->
+</script>
+</HEAD>
+<BODY>
+<script language="JavaScript">
+<!--
+document.write("<form>");document.write("<center><font color=\"ffffff\">");
+document.write("<input type=button value=\"免費加入學員\" onclick=\"SubPage()\">");
+document.write("</font></center>");document.write("</form>");
+// -->
+</script>
+</BODY>
+====================
+鏈結跳出指定尺寸視窗：
+<HEAD>
+<SCRIPT LANGUAGE = "JavaScript">
+function CreateWindow()
+   {
+msgWindow=window.open("say.htm","displayWindow","toolbar=no,menubar=no,location=no,status=no,scrollbars=yes,resize=no,width=600,height=300")
+ }  
+</SCRIPT>
+</HEAD>
+<BODY>
+<a href="#" onclick="CreateWindow()">網路資訊</a>
+</BODY>
+==============
+限IE Used對話視窗：
+<HEAD>
+<script LANGUAGE="javascript">
+<!--
+function reg ()
+{if (navigator.userAgent.indexOf("MSIE") !=-1)
+	{  window.alert('您使用是IE Browser，請按確定');
+	   window.location="http://www.webpage.idv.tw/";
+        }
+else	{           window.alert('對不起﹗﹗﹗\n這個程式只技援 MSIE');
+        }
+}//-->
+</script>
+</HEAD>
+<BODY>
+<a href="javascript:reg();">限IE Used</a>
+</BODY>
+==============
+指定視窗開啟尺寸及位置：
+<HEAD>
+<script language="javascript">
+<!--
+self.moveTo(0,0);self.resizeTo(screen.availWidth,screen.availHeight);
+//-->
+</script>
+</HEAD>
+============================
+視窗永遠在最上面：
+<SCRIPT LANGUAGE="JavaScript1.1">
+var OnTop = true;
+ function FocusMe()
+   {
+   if (OnTop == true)
+      setTimeout("self.focus()", 0);
+   }
+</SCRIPT>
+<body  onBlur="FocusMe()">
+==============
+開啟頻道無邊框視窗：
+<HEAD>
+<script>
+<!--
+function channel(){
+window.open("http://www.webpage.idv.tw/","","channelmode,scrollbars")
+}
+//-->
+</script>
+</HEAD>
+<BODY>
+<FORM>
+<input type="button" onClick="channel()" value="進入網頁研習室網站">
+</FORM>
+</BODY>
+====================
+圖檔鏈結跳出新視窗：
+<HEAD>
+<script>
+function admire(url,features) {
+	window.open( url,'',features );
+}
+
+</script>
+</HEAD>
+<BODY>
+<a href="javascript: admire('http://www.webpage.idv.tw/','toolbar,resizable') ;"><img src="http://www.webpage.idv.tw/mail.gif"></a>
+</BODY>
+==============
+開啟固定尺寸圖檔：
+<BODY>
+<A HREF="box01.jpg" TARGET="external" onclick="window.open('box01.jpg', 'external', 'width=520,height=422')">Picture</a>
+</BODY>
+=============
+關閉視窗

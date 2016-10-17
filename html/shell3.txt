@@ -1,0 +1,106 @@
+=========
+避免視窗被包裹在分割視窗中：
+<HEAD>
+<script language="JavaScript" type="text/javascript">
+<!-- Hide script from older browsers
+     if (top.location == self.location) {
+          top.location.href = "check.htm"
+     }
+// end hiding contents -->
+</script>
+</HEAD>
+=========
+<script>
+if ( self.name!="sel")
+ { 
+   top.window.location.href="http://www.webpag.idv.tw/error.htm" ;
+   document.write("<noscript>");
+ };
+</script>
+=========
+Body訊息與時間：
+<body>
+<P align=center><FONT color=#00ff00 size=3>
+現在是....
+<SCRIPT language=JavaScript>
+today=new Date();
+var h = today.getHours();
+var m = today.getMinutes();
+var t = " " + (h) + ":" + (m) + "分";
+function initArray(){
+this.length=initArray.arguments.length
+for(var i=0;i<this.length;i++)
+this[i+1]=initArray.arguments[i] }
+var d=new initArray("星期日", "星期一","星期二", "星期三","星期四", "星期五", "星期六");
+document.write("西元",today.getYear(),"年",today.getMonth()+1,"月",today.getDate(),"日",d[today.getDay()+1]," ",t, ""); 
+</SCRIPT>
+</FONT></P>
+</body>
+=========
+最近更新日期：
+<body>
+<script language="JavaScript">
+<!--
+document.write("最近更新日期 " + document.lastModified);
+// -->
+</script>
+=========
+寄信正確與否查核：
+</HEAD>
+<SCRIPT language="JavaScript">
+<!--
+function checkData ()
+{
+    if (document.forms[0].email.value.length ==0){
+        alert("請注意 : 您未填寫 Email !");
+        return false;
+    }
+    if (document.forms[0].email.value.length >0){
+        i=document.forms[0].email.value.indexOf("@");
+	j=document.forms[0].email.value.indexOf(".",i);
+	k=document.forms[0].email.value.indexOf(",");
+	kk=document.forms[0].email.value.indexOf(" ");
+	jj=document.forms[0].email.value.lastIndexOf(".") + 1;
+	len=document.forms[0].email.value.length;
+
+	if ((i <= 0) || (j <= (1+1)) || (k != -1) || (kk != -1) ||
+	    (len-jj < 2) || (len-jj > 3)) {
+	    alert("請注意 : 您輸入的 Email 不正確 !");
+            return false;
+        }
+    }
+}
+//-->
+</script>
+</HEAD>
+<BODY>
+<FORM  onSubmit="return checkData()">
+<input type=text   NAME="email" size=30 maxlength=50>
+<input type="submit" value="完成送出">
+</FORM>
+</BODY>
+=========
+自動向下捲動螢幕
+<HEAD>
+<script LANGUAGE="JavaScript">
+<!--
+        var position = 0;
+function scroller() {
+        if (position != 1100) {
+                position++;
+                scroll(0,position);
+                clearTimeout(timer);
+                var timer = setTimeout("scroller()",3); timer;
+        }
+        else
+		 {
+           location.replace("#");
+        }
+}
+
+// -->
+</script>
+</HEAD>
+<BODY onload="scroller()">
+=========
+關閉視窗

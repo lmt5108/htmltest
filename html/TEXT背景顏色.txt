@@ -1,0 +1,13 @@
+<head> 
+  <style type="text/css"> 
+    div { 
+      background-color:#FF0000; 
+    } 
+  </style> 
+</head>
+
+<body> 
+  <div> 
+    ­I´ºÃC¦â¬O¬õ¦â 
+  </div> 
+</body>

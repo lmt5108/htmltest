@@ -1,0 +1,5 @@
+<H4 Align="left">標題靠左</H4>
+
+<H4 Align="center">標題置中</H4>
+
+<H4 Align="right">標題靠右</H4>

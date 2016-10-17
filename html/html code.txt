@@ -1,0 +1,41 @@
+這是常用到的HTML Code：
+=========
+Body內語法：
+Link 用法：
+<Body 後加入LINK=#800000(可Link的顏色) VLINK=#800080(被Link過的顏色) ALINK=#FF00FF(按下Link時的顏色)>。
+=========
+背景固定語法： bgproperties=fixed
+<body BGPROPERTIES="FIXED">
+==========
+Body貼齊邊緣語法：
+<BODY BACKGROUND="back.jpg" marginwidth=-1 marginheight=-1 topmargin=0 leftmargin=0 rightmargin=0>
+=========
+信息列文字展示：
+<BODY ondragstart="return false" onmouseover="window.status='為您精挑細選..提供您最佳的學習的享受...';"
+################
+Head內常用碼：
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META NAME="Author" CONTENT="Lee Wen Neng">
+<META NAME="Description" CONTENT="本教材版權屬網頁研習室作者所有，未經授權同意，不得非法使用">
+<link rev="made" href="mailto:leewn@pchome.com.tw">
+<link rev="made" href="http://come.to/leewn">
+<META NAME="KeyWords" CONTENT="網頁,網頁製作,研習,教學,範例,電子報">
+<META NAME="KeyWords" CONTENT="HomePageeb,java,html,javascript,cgi,asp,dhtml,teacher,exp,maillist">
+<META NAME="Creation-Date" CONTENT="01-jan-2001 20:40:01">
+<META NAME="Generator" CONTENT="Mozilla/3.0Gold(Win95)[Netscape]">
+<meta http-equiv="Content-Type" content="Application/msword">
+(讓瀏覽器正確顯示word文件格式)
+<META HTTP-EQUIV="Pragma" CONTENT="no_cache"> 
+<META HTTP-EQUIV="Cache-control" CONTENT="no_cache,must-reavlidate"> 
+<META NAME="Expired" CONTENT="01-jan-2000 00:00:01">
+<meta http-equiv="指定要換頁特效發生的狀況" content="特效模式(Duration=特效持續時間,Transition=代替的特效)">
+<META HTTP-EQUIV="REFRESH" CONTENT="15; url=exp1.htm">
+<link rel="SHORTCUT ICON" href="http://www.netfirms.com/favicon.ico">
+預設基礎路徑：<BASE HREF="http://www.netvigator.com.tw/~mipeggy/java/05/">
+</head>
+=========
+註解語法：
+<!--嗨！這裡面的註解文字，您是看不到的-->
+################
+關閉視窗

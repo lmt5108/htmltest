@@ -1,0 +1,12 @@
+html標籤: <Font Color="red">紅色字體</Font>
+
+顯示結果 :紅色字體
+
+html標籤: <Font Color="#FF0000">紅色字體</Font>
+
+顯示結果 :紅色字體
+
+
+html標籤:<Font Color="Blue">藍色字體</Font>
+
+顯示結果 :藍色字體
